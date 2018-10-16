@@ -1,0 +1,15 @@
+profiles: 测试环境(qa)
+spring:
+  redis:
+      database: 0
+      host: 192.168.88.59
+      port: 6379
+      timeout: 1000
+      lettuce:
+        pool:
+           max-active: 8
+           max-wait: -1
+           max-idle: 8
+           min-idle: 0
+swagger:
+   enable: true
