@@ -1,0 +1,19 @@
+profiles: 开发环境(dev)
+spring:
+  redis:
+      database: 0
+      host: 192.168.88.59
+      port: 6379
+      timeout: 1000
+      lettuce:
+        pool:
+           max-active: 8
+           max-wait: -1
+           max-idle: 8
+           min-idle: 0
+  rocketmq:
+    name-server: 192.168.88.59:9876
+    producer:
+      group: quality-group
+swagger:
+   enable: true

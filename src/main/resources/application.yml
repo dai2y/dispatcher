@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: local
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Hongkong
+  resources:
+        static-locations: classpath:/static/,classpath:/,classpath:/META-INF/resources/,classpath:/META-INF/resources/webjars/
+server:
+  port: 8087
+  servlet:
+    context-path: /quality-control-center
+logging:
+  config: classpath:logback-spring.xml
+
+
